@@ -29,6 +29,7 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
+        excerpt_separator: `<!-- endexcerpt -->`,
         plugins: [
           {
             resolve: "gatsby-remark-images",
@@ -39,9 +40,6 @@ module.exports = {
           },
           {
             resolve: "gatsby-remark-responsive-iframe",
-            options: {
-              wrapperStyle: "margin-bottom: 1.0725rem",
-            },
           },
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
@@ -60,7 +58,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["source sans pro:400,700,900", "open sans:400"],
+        fonts: ["source sans pro:400,600,700,900", "open sans:400"],
         display: "swap",
       },
     },

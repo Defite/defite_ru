@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post prose"
+        className="blog-post w-5/6 mx-auto pt-20 prose dark:prose-dark"
         itemScope
         itemType="http://schema.org/Article"
       >

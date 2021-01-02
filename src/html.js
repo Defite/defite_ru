@@ -1,10 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styles from "./components/scroll-snap.module.css"
 
 export default function HTML(props) {
   return (
-    <html {...props.htmlAttributes} className={styles.scrollSnapContainer}>
+    <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />

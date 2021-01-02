@@ -33,11 +33,31 @@ module.exports = {
             },
           },
         },
+        dark: {
+          css: {
+            color: theme("colors.white"),
+
+            "h1, h2, h3, h4, h5, h6": {
+              color: theme("colors.white"),
+              fontFamily: theme("fontFamily.heading").join(", "),
+            },
+
+            a: {
+              color: theme("colors['logo-pink-dot']"),
+            },
+
+            "strong, blockquote": {
+              color: theme("colors.white"),
+            },
+          },
+        },
       }),
     },
   },
   variants: {
-    typography: ["dark"],
+    extend: {
+      typography: ["dark"],
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 }
