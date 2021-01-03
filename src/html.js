@@ -18,7 +18,7 @@ export default function HTML(props) {
         <div
           key={`body`}
           id="___gatsby"
-          className="font-body bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-500 h-full"
+          className="font-body bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-500"
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
