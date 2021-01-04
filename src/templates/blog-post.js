@@ -5,6 +5,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import styles from "./blog-post.module.css"
+
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -17,24 +19,25 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post w-5/6 mx-auto pt-20 prose dark:prose-dark"
+        className="blog-post pt-20 prose dark:prose-dark max-w-full"
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
+        <header className={styles.kgCanvas}>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
+          className={styles.kgCanvas}
         />
-        <hr />
-        <footer>
+        <footer className={styles.kgCanvas}>
+          <hr />
           <Bio />
         </footer>
       </article>
-      <nav className="blog-post-nav">
+      <nav className={`blog-post-nav mb-20 ${styles.kgCanvas}`}>
         <ul
           style={{
             display: `flex`,

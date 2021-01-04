@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Intro = () => {
   return (
-    <section className="flex flex-col justify-center items-start w-full mt-auto">
+    <section className="container mx-auto px-20 flex flex-col justify-center items-start w-full mt-auto">
       <h1 className="font-heading font-bold text-7xl mb-10 text-gray-800 dark:text-gray-300">
         Nikita Makhov
       </h1>

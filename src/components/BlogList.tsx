@@ -30,7 +30,7 @@ const BlogList: React.FunctionComponent = ({ items }) => {
   }
 
   return (
-    <section className="pt-20 mb-20" id="blog-list">
+    <section className="container mx-auto px-20 pt-20 mb-20" id="blog-list">
       <h2 className="w-11/12 mx-auto font-heading font-bold text-4xl mb-10 text-gray-800 dark:text-gray-300">
         Blog
       </h2>

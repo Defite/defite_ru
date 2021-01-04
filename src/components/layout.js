@@ -7,7 +7,7 @@ const Layout = ({ /*location, title, */ children }) => {
     <React.Fragment>
       <Header />
       <main
-        className="container mx-auto px-20 flex flex-col justify-center"
+        className="flex flex-col justify-center"
         style={{ minHeight: "100vh" }}
       >
         {children}

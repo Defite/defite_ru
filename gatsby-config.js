@@ -32,15 +32,22 @@ module.exports = {
         excerpt_separator: `<!-- endexcerpt -->`,
         plugins: [
           {
+            resolve: "gatsby-remark-images-grid",
+            options: {
+              className: "figure-grid",
+              gridGap: "20px",
+            },
+          },
+          {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 630,
               showCaptions: true,
+              linkImagesToOriginal: false,
             },
           },
-          {
-            resolve: "gatsby-remark-responsive-iframe",
-          },
+          "gatsby-remark-images-medium-zoom",
+          "gatsby-remark-responsive-iframe",
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
