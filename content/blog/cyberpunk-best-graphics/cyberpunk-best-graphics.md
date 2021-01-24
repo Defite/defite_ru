@@ -1,7 +1,9 @@
 ---
-title: Cyberpunk best graphics
+title: Cyberpunk graphics quality on PS4 Pro
 date: "2021-01-04T16:24:03.284Z"
 type: text
+tags: ['cyberpunk 2077', 'games']
+theme: default
 ---
 
 I played Cyberpunk 2077 on my PS4 Pro and captured this amaizing pictures.

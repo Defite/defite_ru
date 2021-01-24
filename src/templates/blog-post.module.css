@@ -13,7 +13,7 @@
     [main-start]
     min(750px, calc(100% - 8vw))
     [main-end]
-    minmax(auto, 50px)
+    minmax(auto, 110px)
     [wide-end]
     minmax(4vw, auto)
     [full-end];

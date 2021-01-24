@@ -5,4 +5,6 @@ export interface IBlogCard {
   slug: string;
   title: string;
   type: 'text' | 'video';
+  tags: string[]
+  theme?: string;
 }

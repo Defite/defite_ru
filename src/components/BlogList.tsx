@@ -9,7 +9,7 @@ const BlogList: React.FunctionComponent = ({ items }) => {
     }
 
     const result = items.map(post => {
-      const { date, title, type } = post.frontmatter
+      const { date, title, type, tags, theme } = post.frontmatter
 
       return (
         <BlogCard
@@ -18,12 +18,14 @@ const BlogList: React.FunctionComponent = ({ items }) => {
           excerpt={post.excerpt}
           title={title}
           type={type}
+          tags={tags}
+          theme={theme}
         />
       )
     })
 
     return (
-      <div className="w-11/12 mx-auto grid grid-cols-2 gap-6 auto-rows-fr">
+      <div className="w-full mx-auto grid grid-cols-3 gap-6 auto-rows-fr">
         {result}
       </div>
     )
@@ -31,7 +33,7 @@ const BlogList: React.FunctionComponent = ({ items }) => {
 
   return (
     <section className="container mx-auto px-20 pt-20 mb-20" id="blog-list">
-      <h2 className="w-11/12 mx-auto font-heading font-bold text-4xl mb-10 text-gray-800 dark:text-gray-300">
+      <h2 className="w-full mx-auto font-heading font-bold text-4xl mb-10 text-gray-800 dark:text-gray-300">
         Blog
       </h2>
       {buildList()}

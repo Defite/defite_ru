@@ -33,6 +33,8 @@ export const pageQuery = graphql`
           title
           description
           type
+          tags
+          theme
         }
       }
     }
