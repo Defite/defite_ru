@@ -5,9 +5,19 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import mediumZoom from "medium-zoom"
+
 import styles from "./blog-post.module.css"
 
 const BlogPostTemplate = ({ data, location }) => {
+  React.useEffect(() => {
+    const zoom = mediumZoom('.gatsby-resp-image-wrapper img')
+
+    return () => {
+      zoom.detach()
+    }
+  }, [])
+
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
