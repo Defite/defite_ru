@@ -4,16 +4,11 @@ import Footer from "./Footer"
 
 const Layout = ({ /*location, title, */ children }) => {
   return (
-    <React.Fragment>
+    <div className="flex flex-col justify-center" style={{minHeight: '100vh'}}>
       <Header />
-      <main
-        className="flex flex-col justify-center"
-        style={{ minHeight: "100vh" }}
-      >
-        {children}
-        <Footer className="mt-auto" />
-      </main>
-    </React.Fragment>
+      <main className="mt-auto">{children}</main>
+      <Footer className="mt-auto" />
+    </div>
   )
 }
 

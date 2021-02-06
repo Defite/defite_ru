@@ -6,8 +6,8 @@ import LightIcon from "../assets/inline/light.svg"
 
 const Header: React.FunctionComponent = () => {
   return (
-    <header className="global-header fixed top-0 w-full py-3">
-      <div className="container mx-auto px-20 flex content-center items-center">
+    <header className="global-header w-full py-3 z-10">
+      <div className="container mx-auto xl:px-10 flex content-center items-center">
         <Logo />
         <ThemeToggler>
           {({ theme, toggleTheme }) => {

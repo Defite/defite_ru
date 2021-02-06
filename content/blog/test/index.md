@@ -1,9 +1,8 @@
 ---
-title: Hello World
+title: Test
 date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "Test"
 type: text
-theme: cold
 tags: ['blog']
 ---
 

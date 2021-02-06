@@ -1,3 +1,13 @@
 .blog-card {
   position: relative;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  margin: 15px 0 15px 15px;
+  min-height: 370px;
+}
+
+.blog-card-tags {
+  position: absolute;
+  bottom: 40px;
+  z-index: 10;
 }

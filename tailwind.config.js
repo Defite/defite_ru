@@ -2,6 +2,18 @@ module.exports = {
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    flex: {
+      '33': '1 0 33.333%',
+      '66': '1 0 66.666%',
+      '100': '1 0 100%'
+    },
+    screens: {
+      'sm': {'min': '640px', 'max': '767px'},
+      'md': {'min': '768px', 'max': '1023px'},
+      'lg': {'min': '1024px', 'max': '1279px'},
+      'xl': {'min': '1280px', 'max': '1535px'},
+      '2xl': {'min': '1536px'},
+    },
     extend: {
       colors: {
         "logo-pink-dot": "#FF4C60",

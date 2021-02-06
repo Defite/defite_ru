@@ -40,19 +40,18 @@ const Bio = () => {
   const avatar = data?.avatar?.childImageSharp?.fixed
 
   return (
-    <div className="bio flex">
+    <div className="bio flex mt-5">
       {avatar && (
         <Image
           fixed={avatar}
           alt={author?.name || ``}
-          className="bio-avatar rounded-full flex-none mr-4 my-5"
-          imgStyle={{
-            marginTop: 0,
-            marginBottom: 0,
-          }}
+          className="bio-avatar rounded-full flex-none mr-4"
         />
       )}
-      {author?.name && (
+      <div>
+        {author?.name && <span className="font-heading font-semibold text-lg">{author.name}</span>}
+      </div>
+      {/* {author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
@@ -60,7 +59,7 @@ const Bio = () => {
             You should follow them on Twitter
           </a>
         </p>
-      )}
+      )} */}
     </div>
   )
 }

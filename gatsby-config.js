@@ -42,8 +42,10 @@ module.exports = {
             resolve: "gatsby-remark-images",
             options: {
               linkImagesToOriginal: false,
+              maxWidth: 750
             },
           },
+          "gatsby-remark-reading-time",
           "gatsby-remark-responsive-iframe",
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
