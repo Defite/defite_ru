@@ -7,13 +7,13 @@ module.exports = {
       '66': '1 0 66.666%',
       '100': '1 0 100%'
     },
-    screens: {
-      'sm': {'min': '640px', 'max': '767px'},
-      'md': {'min': '768px', 'max': '1023px'},
-      'lg': {'min': '1024px', 'max': '1279px'},
-      'xl': {'min': '1280px', 'max': '1535px'},
-      '2xl': {'min': '1536px'},
-    },
+    // screens: {
+    //   'sm': {'min': '320px', 'max': '767px'},
+    //   'md': {'min': '768px', 'max': '1023px'},
+    //   'lg': {'min': '1024px', 'max': '1279px'},
+    //   'xl': {'min': '1280px', 'max': '1535px'},
+    //   '2xl': {'min': '1536px'},
+    // },
     extend: {
       colors: {
         "logo-pink-dot": "#FF4C60",
@@ -69,6 +69,7 @@ module.exports = {
   variants: {
     extend: {
       typography: ["dark"],
+      flexGrow: ["last"]
     },
   },
   plugins: [require("@tailwindcss/typography")],
